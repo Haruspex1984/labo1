@@ -1,0 +1,235 @@
+@font-face {
+    font-family: "LiberationSans-Regular";
+    src: url(/fonts/LiberationSans-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "LiberationSans-Bold";
+    src: url(/fonts/LiberationSans-Bold.ttf) format('truetype');
+}
+
+
+body {
+    margin: 0 0 0 0;
+    background-color: white;
+    font-family: "LiberationSans-Regular";
+}
+
+nav {
+    font-family: "LiberationSans-Bold";
+    display: flex;
+    flex-direction: column;
+    font-size: 1.9rem;
+    background-color: rgb(59,117,177);
+    margin-bottom: 50px;
+}
+
+@media screen and (min-width : 1024px) and (orientation : landscape) {
+    nav {
+        flex-direction: row;
+    }
+}
+
+nav a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    margin-left: 2%;
+    padding: 10px 0 10px 0;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+@media screen and (min-width : 1024px) and (orientation : landscape) {
+    .align_center{
+        align-items: center;
+    }
+}
+
+.home_logo {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 10px;
+}
+
+@media screen and (min-width : 1024px) and (orientation : landscape) {
+    .home_logo{
+        align-items: center;
+    }
+}
+
+.search {
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+
+@media screen and (min-width : 1024px) and (orientation : landscape) {
+.search {
+    display: flex;
+    flex-grow: 1;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: right;
+    margin-bottom: 0;
+
+}
+
+}
+
+input[type="search"] {
+    display: flex;
+    height: 2rem;
+    box-sizing: content-box;
+    font-size: 1rem;
+    max-width: 200px;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+h4 {
+    margin-top: 0;
+}
+
+.central {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+@media screen and (min-width : 1024px) and (orientation : landscape) {
+    .central {
+        flex-direction: row;
+        margin-top: 5%;
+    }
+}
+
+
+aside {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 5%;
+    flex-direction: column;
+}
+
+aside a {
+    color: rgb(59,117,177);
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+aside a:hover{
+    background-color: rgb(216,229,234);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+@media screen and (min-width : 1024px) and (orientation : landscape) {
+    main {
+        max-width: 50%;
+    }
+}
+
+.panneau_alerte {
+    background-color: rgb(254,254,206) ;
+    border: solid 1px gold;
+    margin-bottom: 25px;
+    padding: 30px;
+}
+
+.panneau_alerte a {
+    text-decoration: none;
+    color: rgb(59,117,177);
+}
+
+@media screen and (min-width : 1024px) and (orientation : landscape) {
+    .panneau_alerte {
+        font-size: 1.2rem;
+    }
+}
+
+.panneau_lien {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(216,229,234);
+    padding: 50px;
+    border-radius: 20px; 
+    margin-bottom: 25px;
+}
+
+.button {
+    display: flex;
+    max-width: fit-content;
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(24,134,84);
+    color: white;
+    font-size: 1.2rem;
+    margin: auto;
+
+}
+
+.panneau_lien_txt {
+    display: flex;
+    color: #016;
+    flex-direction: column;
+    width: 70%;
+    align-self: center;
+    text-align: center;
+}
+
+.panneau_lien_txt a{
+    color :#00369a;
+    text-decoration: none;
+}
+
+.panneau_lien_txt a:hover{
+    text-decoration: underline;
+
+}
+
+.texte_main {
+    display: flex;
+    flex-direction: column;
+}
+
+.texte_main p {
+    display: flex;
+    flex-direction: column;
+}
+
+.texte_main a {
+    color: rgb(59,117,177) ;
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: rgb(238,238,238);
+    font-size: 0.8rem;
+}
+
+
+.liens_footer {
+    margin-right: 20px;
+    text-decoration: none;
+    color: gray;
+}
+
